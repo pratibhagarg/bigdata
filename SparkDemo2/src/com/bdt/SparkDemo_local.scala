@@ -46,7 +46,7 @@ object SparkDemo_local {
     
     import spark.implicits._  //to convert RDD into DF
     //cleansing/ RDDs
-    val empRDD=sc.textFile(args(0));
+    val empRDD=sc.textFile("C:/Users/IBM_ADMIN/Downloads/input/emp.txt");
     empRDD.foreach(println)
     println("-----------------applictaion completed-------------------")
     
